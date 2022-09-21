@@ -1,7 +1,7 @@
 /*
  * @Author: 张玉婷
  * @Date: 2022-09-21 15:04:03
- * @LastEditTime: 2022-09-21 17:14:42
+ * @LastEditTime: 2022-09-21 17:37:12
  * @LastEditors: 张玉婷
  * @Description: webpack 配置文件
  * @FilePath: \webpack\03_webpack样式资源2\webpack.config.js
@@ -60,6 +60,10 @@ module.exports = {
           // 将 Sass 编译成 CSS
           'sass-loader',
         ],
+      },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: 'asset/resource',
       },
     ]
   },
