@@ -1,7 +1,7 @@
 /*
  * @Author: 张玉婷
  * @Date: 2022-09-21 15:04:03
- * @LastEditTime: 2022-09-23 16:06:36
+ * @LastEditTime: 2022-09-28 13:46:59
  * @LastEditors: 张玉婷
  * @Description: webpack 配置文件
  * @FilePath: \webpack\13_生产模式\config\webpack.prod.js
@@ -115,12 +115,6 @@ module.exports = {
     // 新的文件特点: 1. 结构和原来一致 2. 自动引入打包后的资源
     template: resolve(__dirname, '../public/index.html')
   })],
-  // 开启服务器: 不会输出资源,内存中编译打包的
-  devServer: {
-    host: 'localhost', // 启动服务器域名
-    port: '8089', // 启动服务器端口号
-    open: true, // 是否自动打开浏览器
-  },
   // 开发模式development 或者 production
   mode: 'production' 
 }

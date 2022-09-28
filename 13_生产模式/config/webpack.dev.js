@@ -1,7 +1,7 @@
 /*
  * @Author: 张玉婷
  * @Date: 2022-09-21 15:04:03
- * @LastEditTime: 2022-09-23 15:57:05
+ * @LastEditTime: 2022-09-28 13:50:12
  * @LastEditors: 张玉婷
  * @Description: webpack 配置文件
  * @FilePath: \webpack\13_生产模式\config\webpack.dev.js
@@ -22,7 +22,7 @@ module.exports = {
   output: {
     // 入口文件输出文件名
     filename: './js/main.js',
-    // 所有文件输出路径
+    // 开发模式不需要输出路径、所有文件输出路径
     // __dirname: node.js的变量， 代表当前文件的目录路径
     path: undefined,
     /*********************** S 清空上次打包内容 ************************************/
