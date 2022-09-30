@@ -1,7 +1,7 @@
 /*
  * @Author: 张玉婷
  * @Date: 2022-09-21 15:04:03
- * @LastEditTime: 2022-09-30 17:00:17
+ * @LastEditTime: 2022-09-30 17:29:55
  * @LastEditors: JunFan Hang
  * @Description: webpack 配置文件
  * @FilePath: \webpack\16_高级\03_OneOf\config\webpack.dev.js
@@ -25,10 +25,6 @@ module.exports = {
     // 开发模式不需要输出路径、所有文件输出路径
     // __dirname: node.js的变量， 代表当前文件的目录路径
     path: undefined,
-    /*********************** S 清空上次打包内容 ************************************/
-    // 清空上次打包内容, 打包请将path目录清空在打包
-    clean: true,
-    /*********************** E 清空上次打包内容 ************************************/
   },
   // loader 配置
   module: {

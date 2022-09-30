@@ -1,19 +1,19 @@
 /*
  * @Author: 张玉婷
  * @Date: 2022-09-23 16:48:11
- * @LastEditTime: 2022-09-30 17:01:19
+ * @LastEditTime: 2022-09-30 17:27:21
  * @LastEditors: JunFan Hang
  * @Description: any
  * @FilePath: \webpack\16_高级\03_OneOf\config\webpack.prod.js
  */
-const path = require("path");
+const { resolve, } = require('path')
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 // 抽离css插件
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 module.exports = {
   entry: "./src/main.js",
   output: {
-    path: path.resolve(__dirname, "../build"), // 生产模式需要输出
+    path: resolve(__dirname, "../build"), // 生产模式需要输出
     filename: "static/js/main.js", // 将 js 文件输出到 static/js 目录中
     clean: true,
   },
@@ -76,7 +76,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       // 以 public/index.html 为模板创建文件
       // 新的html文件有两个特点：1. 内容和源文件一致 2. 自动引入打包生成的js等资源
-      template: path.resolve(__dirname, "../public/index.html"),
+      template: resolve(__dirname, "../public/index.html"),
     }),
     // 提取css成单独文件
     new MiniCssExtractPlugin({
