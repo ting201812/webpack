@@ -1,9 +1,9 @@
 /*
  * @Author: JunFan Hang
  * @Date: 2022-10-08 17:16:21
- * @LastEditTime: 2022-10-09 13:23:00
+ * @LastEditTime: 2022-10-09 13:30:28
  * @LastEditors: JunFan Hang
- * @Description: any
+ * @Description: 按需引入
  * @FilePath: \webpack\16_高级\10_code_split\demo3\src\main.js
  */
 import { sum, } from './math.js';
